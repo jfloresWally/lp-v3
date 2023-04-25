@@ -1,0 +1,85 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.bt-primary {
+  display: inline-flex;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #25b562;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #fff;
+}
+.bt-primary:hover {
+  background-color: #1c884a;
+}
+.bt-primary:active {
+  background-color: #1c884a;
+}
+.bt-fill {
+  width: 100%;
+}
+
+.bt-secondary {
+  line-height: 24px;
+  text-align: center;
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #f9fafb;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  color: #334155;
+  box-shadow: 0 0 2px #64748b;
+}
+
+.bt-secondary:hover {
+  background-color: #cbd5e1;
+}
+.bt-secondary:active {
+  background-color: #cbd5e1;
+}
+
+.container {
+  max-width: 48rem;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion-item .item-fqa {
+  display: flex;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
