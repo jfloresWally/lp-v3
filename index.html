@@ -20,7 +20,7 @@
                <img src="./assets/icon-logo-white.svg" alt="logo de Wally">
            </a>
            <img class="xl:collapse xl:w-0" src="./assets/icon-menu.svg" alt="icon menu" onclick="myFunction()">
-           <nav  class="absolute bg-green-200 top-16 left-0 right-0 xl:visible xl:static xl:top-0 xl:flex xl:flex-grow xl:justify-between xl:items-center" id="myDIV" >
+           <nav  class="absolute bg-green-200 top-16 left-0 right-0 hidden xl:visible xl:static xl:top-0 xl:flex xl:flex-grow xl:justify-between xl:items-center" id="myDIV" >
                 <ul class="xl:flex">
                     <li><a href="#facturacion" class="block px-4 py-2 text-cool-gray-50 font-bold text-base hover:text-cool-gray-600">Facturación</a></li>
                     <li><a href="#pos" class="block px-4 py-2 text-cool-gray-50 font-bold text-base hover:text-cool-gray-600">Punto de venta</a></li>
@@ -46,7 +46,7 @@
      </section>
 
      <!-- Facturación -->
-     <section class="mb-20 py-10 px-4 bg-cool-gray-600 rounded-lg flex justify-center max-w-7xl md:mx-auto md:py-20 " id="facturacion">
+     <section class="mb-6 py-10 px-4 bg-cool-gray-600 rounded-lg flex justify-center max-w-7xl md:mx-auto md:py-20 " id="facturacion">
         <div class="max-w-3xl">
             <header class="mb-8">
                 <p class="text-base text-cool-gray-50 text-center sm:text-2xl">¿Primera vez con facturación electrónica?</p>
@@ -58,11 +58,185 @@
         </div>
      </section>
 
+     <section class="px-4 mb-20 flex flex-col items-center lg:flex-row lg:justify-center lg:gap-6">
+        <article class="max-w-md w-full p-4 bg-cool-gray-50 rounded-lg mb-4 shadow-md sm:flex sm:items-start lg:mb-0">
+            <img src="./assets/icon-sunat.svg" alt="icono sunat" class="mb-2 sm:mr-2">
+            <div>
+                <p class="text-base font-bold text-cool-gray-600"><strong>Integración con SUNAT</strong></p>
+                <p class="text-base text-cool-gray-600">Podrás ver el estado de tus comprobantes desde Wally.</p>
+            </div>
+        </article>
+        <article class="max-w-md w-full p-4 bg-cool-gray-50 rounded-lg shadow-md sm:flex sm:items-start">
+            <img src="./assets/icon-doc.svg" alt="icono documento" class="mb-2 sm:mr-2">
+            <div>
+                <p class="text-base font-bold text-cool-gray-600">Emite documentos</p>
+                <p class="text-base text-cool-gray-600">Podrás emitir Facturas, Boletas, Notas de crédito y mucho más.</p>
+            </div>
+        </article>
+    </section>
+    
+    <!-- Planes -->
+    <section class="px-4 mb-20 sm:mb-28 sm:mt-28" id="precios">
+        <header class="mb-8">
+            <p class="text-base text-cool-gray-600 text-center sm:text-2xl">Disfruta de todos nuestros planes</p>
+            <h3 class="text-2xl font-bold text-cool-gray-600 text-center sm:text-4xl">Gratis por 1 mes</h3>
+        </header>
+        <div class="flex flex-col items-center gap-2 mb-8 sm:flex-row md:justify-center sm:gap-4">
+            <div class="flex">
+                <img src="./assets/icon-green-check.svg" alt="icono check verde">
+                <p><em class="text-cool-gray-500">Capacitación grupal remota</em></p>
+            </div>
+            <div class="flex">
+                <img src="./assets/icon-green-check.svg" alt="icono check verde">
+                <p><em class="text-cool-gray-500">Aplicación para Android</em></p>
+            </div>
+            <div class="flex">
+                <img src="./assets/icon-green-check.svg" alt="icono check verde">
+                <p><em class="text-cool-gray-500">Planes sin ataduras</em></p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6 mb-8 items-center justify-center xl:flex-row xl:items-stretch">
+            <article class="bg-cool-gray-50 shadow-md p-4 rounded-lg w-full max-w-sm">
+                <header class="mb-4">
+                    <span class="inline-block text-sm px-2 py-1 bg-blue-200 rounded-md font-bold text-cool-gray-50 mb-1">1 mes gratis</span>
+                    <p class="text-xl font-bold text-cool-gray-600 mb-1">Plan Facturación</p>
+                    <p class="text-base text-cool-gray-600">Después de tu prueba gratis <span class="font-bold">S/49.90</span> + IGV al mes</p>
+                </header>
+                <a href="#" class="bt-primary bt-fill mb-4">Regístrate y empieza gratis</a>
+                <ul>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Factura hasta S/30,000 al mes</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Punto de venta</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-close.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Sin gestión de inventario</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Soporte por chat</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Hasta 2 Usuarios</span>
+                    </li>
+                </ul>
+            </article>
+            <article class="bg-cool-gray-50 shadow-md p-4 rounded-lg w-full max-w-sm">
+                <header class="mb-4">
+                    <span class="inline-block text-sm px-2 py-1 bg-blue-200 rounded-md font-bold text-cool-gray-50 mb-1">1 mes gratis</span>
+                    <p class="text-xl font-bold text-cool-gray-600 mb-1">Plan Crece</p>
+                    <p class="text-base text-cool-gray-600">Después de tu prueba gratis <span class="font-bold">S/99.90</span> + IGV al mes</p>
+                </header>
+                <a href="#" class="bt-primary bt-fill mb-4">Regístrate y empieza gratis</a>
+                <ul>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Factura hasta S/60,000 al mes</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Punto de venta</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Gestión de inventario</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Soporte por chat</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Hasta 4 Usuarios</span>
+                    </li>
+                </ul>
+            </article>
+            <article class="bg-cool-gray-50 shadow-md p-4 rounded-lg w-full max-w-sm">
+                <header class="mb-4">
+                    <span class="inline-block text-sm px-2 py-1 bg-blue-200 rounded-md font-bold text-cool-gray-50 mb-1">1 mes gratis</span>
+                    <span class="inline-block text-sm px-2 py-1 bg-cool-gray-600 rounded-md font-bold text-cool-gray-50 mb-1">recomendado</span>
+                    <p class="text-xl font-bold text-cool-gray-600 mb-1">Plan Gastronomía</p>
+                    <p class="text-base text-cool-gray-600">Después de tu prueba gratis <span class="font-bold">S/149.90</span> + IGV al mes</p>
+                </header>
+                <a href="#" class="bt-primary bt-fill mb-4">Regístrate y empieza gratis</a>
+                <ul>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Factura sin ningún limite</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Punto de venta</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Gestión de inventario</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Soporte por chat y teléfono</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Usuarios ilimitados</span>
+                    </li>
+                    <li class="flex gap-2">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Tomador de pedidos</span>
+                    </li>
+                </ul>
+            </article>
+            <article class="bg-cool-gray-50 shadow-md p-4 rounded-lg w-full max-w-sm">
+                <header class="mb-4">
+                    <span class="inline-block text-sm px-2 py-1 bg-blue-200 rounded-md font-bold text-cool-gray-50 mb-1">1 mes gratis</span>
+                    <p class="text-xl font-bold text-cool-gray-600 mb-1">Plan Avanza</p>
+                    <p class="text-base text-cool-gray-600">Después de tu prueba gratis <span class="font-bold"> S/199.90</span> + IGV al mes</p>
+                </header>
+                <a href="#" class="bt-primary bt-fill mb-4">Regístrate y empieza gratis</a>
+                <ul>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Factura sin ningún limite</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Punto de venta</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Gestión de inventario</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Soporte por chat y teléfono</span>
+                    </li>
+                    <li class="flex gap-2 mb-1">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Usuarios ilimitados</span>
+                    </li>
+                    <li class="flex gap-2 items-start">
+                        <img src="./assets/icon-fill-check.svg" alt="check icon">
+                        <span class="text-base text-cool-gray-600">Emisión de cotizaciones y notas de débito</span>
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <p class="text-base text-cool-gray-600">¿Aún no sabes que plan elegir?</p>
+            <a class="flex text-blue-200 font-bold" href="#">Contáctanos <img src="./assets/icon-blue-ws.svg" alt=""></a>
+        </div>
+    </section>
+
      <main class="mx-4">
 
         <!-- Punto de venta -->
         <section class="mb-20 max-w-xl mx-auto sm:mb-28 xl:max-w-7xl xl:flex xl:gap-16 xl:items-center" id="pos">
-            <img class="rounded-lg mb-6 xl:max-w-xl xl:order-1" src="./assets/img-punto-de-venta.webp" alt="imagen punto de venta">
+            <img class="rounded-lg mb-6 xl:max-w-xl xl:order-1" src="./assets/img-black-punto-de-venta.webp" alt="imagen punto de venta">
             <article>
                 <div class="mb-6">
                     <h2 class="text-2xl font-bold text-cool-gray-600 mb-2 sm:text-4xl">Punto de venta</h2>
@@ -128,202 +302,7 @@
         </section>
         
     </main>
-
-    <!-- Planes -->
-    <section class="py-11 px-4 bg-green-200 mb-20 sm:py-20 sm:mb-28 sm:mt-28" id="precios">
-        <header class="mb-8">
-            <p class="text-base text-cool-gray-50 text-center sm:text-2xl">¿Pocas ventas este mes?</p>
-            <h3 class="text-2xl font-bold text-cool-gray-50 text-center sm:text-4xl">Planes accesibles para tu emprendimiento</h3>
-        </header>
-        <div class="flex flex-col gap-6 mb-8 items-center justify-center xl:flex-row xl:items-stretch">
-            <article class="bg-cool-gray-50 p-4 rounded-lg w-full max-w-sm">
-                <p class="text-xl font-bold text-center text-cool-gray-600 mb-4">Plan Facturación</p>
-                <div class="flex items-center gap-1 justify-center mb-4">
-                    <span class="text-sm text-cool-gray-600">S/.</span>
-                    <span class="text-4xl font-bold text-cool-gray-600">49</span>
-                    <span class="text-sm text-cool-gray-600">.90 + IGV</span>
-                </div>
-                <a href="#" class="bt-primary bt-fill mb-4">Prueba 1 mes gratis</a>
-                <ul>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Vende hasta S/ 30,000 al mes</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Facturación electrónica</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Punto de venta</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Reportes simples</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Hasta 2 usuarios</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-close.svg" alt="close icon">
-                        <span class="text-base text-cool-gray-600">No incluye Almacén</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Soporte vía chat</span>
-                    </li>
-                    <li class="flex gap-2">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Capacitación grupal remota</span>
-                    </li>
-                    
-                </ul>
-            </article>
-            <article class="bg-cool-gray-50 p-4 rounded-lg max-w-sm w-full">
-                <p class="text-xl font-bold text-center text-cool-gray-600 mb-4">Plan Crece</p>
-                <div class="flex items-center gap-1 justify-center mb-4">
-                    <span class="text-sm text-cool-gray-600">S/.</span>
-                    <span class="text-4xl font-bold text-cool-gray-600">99</span>
-                    <span class="text-sm text-cool-gray-600">.90 + IGV</span>
-                </div>
-                <a href="#" class="bt-primary bt-fill mb-4">Prueba 1 mes gratis</a>
-                <ul>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Vende hasta S/ 60,000 al mes</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Facturación electrónica</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Punto de venta</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Reportes avanzados</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Hasta 2 usuarios</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">1 Almacén</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Soporte vía chat y teléfono</span>
-                    </li>
-                    <li class="flex gap-2">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Capacitación grupal remota</span>
-                    </li>
-                    
-                </ul>
-            </article>
-            <article class="bg-cool-gray-50 p-4 rounded-lg max-w-sm w-full">
-                <p class="text-xl font-bold text-center text-cool-gray-600 mb-4">Plan Gastronomía</p>
-                <div class="flex items-center gap-1 justify-center mb-4">
-                    <span class="text-sm text-cool-gray-600">S/.</span>
-                    <span class="text-4xl font-bold text-cool-gray-600">149</span>
-                    <span class="text-sm text-cool-gray-600">.90 + IGV</span>
-                </div>
-                <a href="#" class="bt-primary bt-fill mb-4">Prueba 1 mes gratis</a>
-                <ul>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Vende sin límites</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Facturación electrónica</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Punto de venta</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Reportes avanzados</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Usuarios ilimitados</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">1 Almacén</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Soporte vía chat y teléfono</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Capacitación remota</span>
-                    </li>
-                    <li class="flex gap-2">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Tomador de pedidos</span>
-                    </li>
-                    
-                </ul>
-            </article>
-            <article class="bg-cool-gray-50 p-4 rounded-lg max-w-sm w-full">
-                <p class="text-xl font-bold text-center text-cool-gray-600 mb-4">Plan Avanza</p>
-                <div class="flex items-center gap-1 justify-center mb-4">
-                    <span class="text-sm text-cool-gray-600">S/.</span>
-                    <span class="text-4xl font-bold text-cool-gray-600">199</span>
-                    <span class="text-sm text-cool-gray-600">.90 + IGV</span>
-                </div>
-                <a href="#" class="bt-primary bt-fill mb-4">Prueba 1 mes gratis</a>
-                <ul>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Vende sin límites</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Facturación electrónica</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Punto de venta</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Reportes avanzados</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Usuarios ilimitados</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">2 Almacenes</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Soporte vía chat y teléfono</span>
-                    </li>
-                    <li class="flex gap-2 mb-1">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Capacitación remota</span>
-                    </li>
-                    <li class="flex gap-2 items-start">
-                        <img src="./assets/icon-check.svg" alt="check icon">
-                        <span class="text-base text-cool-gray-600">Emisión de cotizaciones y notas de débito</span>
-                    </li>
-                </ul>
-            </article>
-        </div>
-        <div class="flex justify-center">
-            <a class="bt-secondary" href="https://bbt4oee91iz.typeform.com/to/TcP5Ei2W" target="_blank">Tu opinión importa</a>
-        </div>
-    </section>
+    
 
     <!-- FQA -->
     <section class="mx-4 mb-20 max-w-xl sm:mx-auto sm:mb-28" id="preguntas">
